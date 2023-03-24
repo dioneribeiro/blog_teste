@@ -1,11 +1,11 @@
 <p style="color: green"><%= notice %></p>
-<div class="col-lg-8 mx-auto">
+<div class="col-lg-8 mx-auto bg-success p-2 text-white bg-opacity-75">
   <h1>Posts</h1>
   <%= link_to "Novo post", new_post_path, class: "btn btn-primary btn-lg mb-3"%>
   <div id="posts">
     <% @posts.each do |post| %>
       <div class="card shadow mb-3">
-        <div class="card-body">
+        <div class="card-body bg-success p-2 text-white bg-opacity-50">
           <%= render post %>
           <p>
             <%= link_to "Ver post", post, class: "btn btn-primary" %>

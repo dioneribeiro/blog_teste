@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Café com TI</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -10,9 +11,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="row">
+  <body class="bg-success p-2 text-white bg-opacity-25">
+    <div class="container bg-success p-2 text-white bg-opacity-50">
+      <div class="row bg-success p-2 text-dark bg-opacity-25">
         <%= yield %>
       </div>
     </div>
