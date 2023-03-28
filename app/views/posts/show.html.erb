@@ -1,14 +1,17 @@
 <p><%= notice %></p>
 
-<div class="col-lg-8 bg-success p-2 text-white bg-opacity-25">
-  <div class="card shadow bg-success p-2 text-white bg-opacity-50">
-    <div class="card-body bg-success p-2 text-white bg-opacity-75">
+<div class="justify-content-center"
+
+  <div class="card-body">
+    <div>
       <%= render @post %>
     </div>
   </div>
-  <div class="btn btn-toolbar mt-5">
+
+  <div class="justify-content-center btn btn-toolbar text-center mt-5">
     <%= link_to "Editar", edit_post_path(@post), class: "btn btn-warning me-2" %>
     <%= button_to "Deletar", @post, method: :delete, class: "btn btn-danger  me-2" %>
     <%= link_to "Voltar", posts_path, class: "btn btn-primary" %>
   </div>
+
 </div>

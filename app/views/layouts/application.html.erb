@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="text-bg-secondary p-3 text-bg-dark">
   <head>
     <meta charset="utf-8">
     <title>Café com TI</title>
@@ -11,11 +11,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-success p-2 text-white bg-opacity-25">
-    <div class="container bg-success p-2 text-white bg-opacity-50">
-      <div class="row bg-success p-2 text-dark bg-opacity-25">
-        <%= yield %>
-      </div>
+  <body class="card">
+    <div class="container-center row d-flex">
+      <%= yield %>
     </div>
   </body>
 </html>
