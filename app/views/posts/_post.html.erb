@@ -1,15 +1,18 @@
-<div id="<%= dom_id post %>" class="card-body bg-success p-2 text-black bg-opacity-50">
-  <p class="fs-3">
-    <strong>Titúlo:</strong>
-    <%= post.title %>
-  </p>
-
-  <p class="fs-3">
-    <strong>Descrição:</strong>
-  </p>
-
-  <p class="fs-5 card-text">
-    <%= post.description %>
-  </p>
-
+<div id="<%= dom_id post %>" class="container col-lg-8 mx-auto mb-3">
+  <div class="container card shadow mb-3">
+    <p class="fs-3">
+      <strong>Titúlo:</strong>
+      <%= post.title %>
+    </p>
+  </div>
+      
+  <div class="container card shadow mb-3">
+    <p class="fs-3">
+      <strong>Descrição:</strong>
+    </p>
+    
+    <p class="fs-5 card-text">
+      <%= post.description %>
+    </p>
+  </div>
 </div>
